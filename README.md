@@ -7,7 +7,7 @@ Develope with node.js and other dependencies
   
   3.type cmd
   
-    $npm install
+    npm install
     
   this will install all dependencies according to package.json
     
@@ -15,6 +15,6 @@ Develope with node.js and other dependencies
     
   PS. cmd for development & production
   
-    $npm run dev
+    npm run dev
     
-    $npm run prod
+    npm run prod
