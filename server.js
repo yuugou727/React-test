@@ -1,4 +1,4 @@
-//This file is for Node.js express 
+//work with Node.js express and webpack HMR
 var webpack = require('webpack');
 var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackHotMiddleware = require('webpack-hot-middleware');
@@ -6,7 +6,7 @@ var config = require('./webpack.hot.config.js');
 
 var app = new(require('express'))();
 var port = 9527;
-var host = '0.0.0.0';
+var host = '0.0.0.0';	//Localhost
 
 var compiler = webpack(config);
 

@@ -8,13 +8,12 @@ import Navbar from './Navbar.js';
 import style from "./app.scss";
 
 class App extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {};
     }
     render() {
-        return (<div className = { style.app }
-            class = "container">
+        return (<div className = {style.app}>
             <Navbar />
             <Header />
             <Content />

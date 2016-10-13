@@ -29,7 +29,9 @@ module.exports = {
                 loader: "file",
                 exclude: /node_modules/
             },
-            // woff(2) transfer to base 64 in order to reduce request
+
+            // url-loader: if woff(woff2) file is smaller than limit(10000),
+            // encodes it to Base64 in order to reduce request.
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: "url?limit=10000&minetype=application/font-woff"
