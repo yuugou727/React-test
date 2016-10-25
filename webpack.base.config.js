@@ -30,7 +30,7 @@ module.exports = {
                 exclude: /node_modules/
             },
 
-            // url-loader: if woff(woff2) file is smaller than limit(10000),
+            // url-loader: if woff(woff2) file is smaller than 10000bytes,
             // encodes it to Base64 in order to reduce request.
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
