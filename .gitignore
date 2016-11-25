@@ -6,3 +6,5 @@ logs
 npm-debug.log*
 # Optional npm cache directory
 .npm
+#yarn file
+yarn.lock
