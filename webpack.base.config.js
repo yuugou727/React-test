@@ -3,12 +3,12 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        app: ['./components/app'],
-        vendor: ['react', 'react-dom']
+        app: ['./src/app.js'],
+        vendor: ['react', 'react-dom','jquery','bootstrap']
     },
 
     output: {
-        path: `${__dirname}` + '/static'
+        path: path.resolve(__dirname ,'dist'),
     },
 
     resolve: {
@@ -38,7 +38,12 @@ module.exports = {
             }, {
                 test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: "file"
-            }
+            },
+            // {   
+            //     test: 'jquery/jquery.min.js', 
+            //     loader: 'expose?jQuery'
+            // },
+            //注释 将jQuery配置到全局，bootstrap.min.js里就能引用到。
         ]
     }
 };

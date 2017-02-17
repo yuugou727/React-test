@@ -9,7 +9,7 @@ config.entry.app.unshift(
 
 // development file for HMR at localhost path
 config.output.filename = "[name].js";
-config.output.publicPath = "http://localhost:9527/static/";
+config.output.publicPath = "http://localhost:9527/dist/";
 config.devtool = "#cheap-module-eval-source-map";
 
 config.plugins.push(
